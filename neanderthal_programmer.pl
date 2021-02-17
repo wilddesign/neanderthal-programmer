@@ -34,19 +34,17 @@ if ($_ =~ m/$operator_symbol/) # find operator_symbol
 	my $operation_result = two_argument_operation($first_elem, $second_elem);
 	print "Your result is $operation_result\n";
 	print "Wynik działania to $operation_result\n";
+	close ($source);
 	exit;
 	}
 	else
 	{
 	my $parsed_number = parse_to_binary($_);
 	print "No calculation performed as it lacks the operator. Your input's value equals: $parsed_number\n";
-		print "Brak operatora działania, więc Twój tekst oznacza liczbę:  $parsed_number\n";
+	print "Brak operatora działania, więc Twój tekst oznacza liczbę:  $parsed_number\n";
+	close ($source);
 	}
 }
-
-
-close ($source);
-
 
 # subroutines
 sub parse_to_binary
