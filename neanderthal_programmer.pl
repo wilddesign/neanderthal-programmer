@@ -9,8 +9,7 @@ open my $source, '<', $filename or die $!;
 
 while (<$source>)
 {
-$_ =~ s/[^a-z,]//g; #remove all characters other than letters
-
+$_ =~ s/[^a-zA-Z,]//g; #remove all characters other than letters
 
 # if operator is found more than once, return syntax error
 my @list_of_operators = ($_ =~ m/$operator_symbol/g);
@@ -53,9 +52,9 @@ sub parse_to_binary
 {
 	my $arg = shift;
 	#replace a to 1, y to 0 anything else to nothing and return it as a binary number
-	$arg =~ s/a/1/g; # replace all a with 1
-	$arg =~ s/y/0/g; # replace all y with 0
-	$arg =~ s/[a-z]//g; # remove all other letters
+	$arg =~ s/[aA]/1/g; # replace all a with 1
+	$arg =~ s/[yY]/0/g; # replace all y with 0
+	$arg =~ s/[a-zA-Z]//g; # remove all other letters
 	return eval('0b'.$arg);
 }
 
