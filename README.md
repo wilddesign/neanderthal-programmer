@@ -1,8 +1,8 @@
 # neanderthal-programmer
 Intepreter of the neanderthal programming language.
 
-It is a short interpreter of a specific input file, containing a set o characters and interpreting it as a two-argument operation. In default version, the operation is addition.
-This interpreter assigns 1 to the letter a, and 0 to the letter y. It ignores all other letters, save for the operation which is explicitly defined as the second argument.
+It is a short interpreter of a specific input file, containing a set o characters (which are inarticulate utterances recorded by dictation.io website) and interpreting it as a two-argument operation. In default version, the operation is addition.
+This interpreter assigns 1 to the letter a, and 0 to the letter y. It ignores all other letters, save for the operator which is explicitly defined as the second argument in console command.
 
 To use it, install Perl and then run in the console:
 ```
