@@ -4,7 +4,7 @@ Intepreter of the neanderthal programming language.
 It is a short interpreter of a specific input file, containing a set o characters (which are inarticulate utterances recorded by dictation.io website) and interpreting it as a two-argument operation. In default version, the operation is addition.
 This interpreter assigns 1 to the letter a, and 0 to the letter y. It ignores all other letters, save for the operator which is explicitly defined as the second argument in console command.
 
-*It has an interesting property. The interpreter is designed to be resistant to noise in code. You can pass whatever code, if only it has one operator, it is correctly interpreted. This way, programming requires much less thinking and can be not only by neanderthals, but also by inanimate chaotic objects, like sea waves etc. I think I could investigate it further. Such programming languages may be used to create something more than just IoT: IoT that programs itself with its noisy data!*
+*It has an interesting property. The interpreter is designed to be resistant to noise in code. You can pass whatever code, if only it has one operator, it is correctly interpreted. This way, programming requires much less thinking and can be performed not only by neanderthals pressing random keys, but also by inanimate chaotic objects, like sea waves etc. I think I could investigate it further. Such programming languages may be used to create something more than just IoT: IoT that programs itself with its noisy data!*
 
 To use it, install Perl and then run in the console:
 ```
